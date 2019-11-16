@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/gray_dark"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lineViewLayout"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="28 Aug 60"
+        tools:textColor="@color/gray_dark"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/lineViewLayout"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:background="@color/gray_dark"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iconViewImageView"
+        app:layout_constraintStart_toEndOf="@+id/dateTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iconViewImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/ic_view_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/countViewTextView"
+        app:layout_constraintStart_toEndOf="@+id/lineViewLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_view_grey" />
+
+    <TextView
+        android:id="@+id/countViewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/gray_dark"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lineLayout"
+        app:layout_constraintStart_toEndOf="@+id/iconViewImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="12000k"
+        tools:textColor="@color/gray_dark" />
+
+    <View
+        android:id="@+id/lineLayout"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:background="@color/gray_dark"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iconLikeImageView"
+        app:layout_constraintStart_toEndOf="@+id/countViewTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iconLikeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/ic_like_count"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/countLikeTextView"
+        app:layout_constraintStart_toEndOf="@+id/lineLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_like_count" />
+
+    <TextView
+        android:id="@+id/countLikeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/gray_dark"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lineLayout2"
+        app:layout_constraintStart_toEndOf="@+id/iconLikeImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="12k"
+        tools:textColor="@color/gray_dark" />
+
+    <View
+        android:id="@+id/lineLayout2"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:background="@color/gray_dark"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/countDurationTextView"
+        app:layout_constraintStart_toEndOf="@+id/countLikeTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/countDurationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/gray_dark"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/lineLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1 Hr 22 Min"
+        tools:textColor="@color/gray_dark"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/countLikeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="iconLikeImageView,countLikeTextView" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/countViewLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="iconViewImageView,countViewTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
