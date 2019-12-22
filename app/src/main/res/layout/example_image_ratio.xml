@@ -7,9 +7,9 @@
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/image_17_9"
+        android:src="@drawable/image_16_9"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="17:9"
+        app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
